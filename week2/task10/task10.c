@@ -17,24 +17,26 @@ int main(){ int count=2;
 				scanf("%d",&password);
 				if(password==PASSWORD){
 					printf("welcome");
+					count=2;
 					break;
 				}
 				else{
-					printf("You are not registered\ntry again\n");
+				    if(count!=0)
+				    {
+                    printf("You are not registered\ntry again\n");
 					count--;
+				    }
+
 					}
 			}
-			if(count==-1){
+			if(count==0){
 				printf("No more tries");
 				}
-			
+
 			break;
 		}
 		else{
 			printf("your ID is wrrong Try again\n");
 			}
-		
-		
-		
 	}
 }
