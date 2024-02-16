@@ -14,8 +14,12 @@ int main() {
     printf("Sum: %d\n", num1 + num2);
     printf("Difference: %d\n", num1 - num2);
     printf("Product: %d\n", num1 * num2);
-    printf("Quotient: %d\n", num1 / num2);
-    printf("Modulus: %d\n", num1 % num2);
+    if(num2!=0){
+		printf("div: %d\n", num1 / num2);
+	printf("Modulus: %d\n", num1 % num2);
+	}
+	else{printf("error div/0 XXXXXX");}
+    
     // Logical operations
     printf("\nLogical Operations:\n");
     printf("AND: %d\n", num1 && num2);

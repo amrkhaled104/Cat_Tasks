@@ -7,6 +7,6 @@ int main(){
 	float num;
 	printf("Enter an amount:");
 	scanf("%f",&num);
-	printf(" With tax added : %.2f",num+5.00);
+	printf(" With tax added : %.2f",num+.05*num);
 	return 0;
 }
