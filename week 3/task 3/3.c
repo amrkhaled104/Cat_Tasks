@@ -10,11 +10,23 @@ printf("number of digit is %d",num_digit(num));
 
 }
 int num_digit(int num){
-	int count=0;
-	while(num>0){
-num/=10;
-count++;
+	if(num<0)
+	{
+	num=num*-1;	
+	}
+	if(num==0)
+	{ 
+	    return 1;
+	}
+	else
+	{
+	  int count=0;
+	while(num>0)
+	{
+		num/=10;
+		count++;
 
 	}
 	return count;
+	}
 }
