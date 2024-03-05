@@ -12,7 +12,7 @@ int fibonacci(int n,int first,int secound){
 	}
 	else{
 		
-		for(int i=1;i<n;i++){
+		for(int i=1;i<(n-1);i++){
 			 temp=a+b;
 			 a=b;
 			 b=temp;
